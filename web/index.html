@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>ShopMate · 闲鱼售后助手</title>
+<link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+<div class="app">
+  <aside class="sidebar">
+    <div class="brand">
+      <div class="brand-mark">闲</div>
+      <div class="brand-text">
+        <strong>ShopMate</strong>
+        <span>售后智能体</span>
+      </div>
+    </div>
+
+    <button class="new-chat" id="newChat">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14" /></svg>
+      新建会话
+    </button>
+
+    <div class="tabs" role="tablist">
+      <button class="tab active" data-tab="chats" role="tab">会话</button>
+      <button class="tab" data-tab="orders" role="tab">订单</button>
+    </div>
+
+    <div class="panel" id="chatPanel">
+      <div class="empty-hint">还没有会话</div>
+    </div>
+
+    <div class="panel hidden" id="orderPanel">
+      <div class="search-box">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7" /><path d="M20 20l-3.5-3.5" /></svg>
+        <input id="orderSearch" type="search" placeholder="搜索订单号 / 商品 / 状态" autocomplete="off" />
+      </div>
+      <div class="order-list" id="orderList">
+        <div class="empty-hint">加载中…</div>
+      </div>
+    </div>
+
+    <div class="sidebar-foot">
+      <span class="dot" id="healthDot"></span>
+      <span id="healthText">正在连接服务…</span>
+    </div>
+  </aside>
+
+  <main class="main">
+    <header class="topbar">
+      <div class="agent-info">
+        <div class="avatar">S</div>
+        <div>
+          <h1>ShopMate 售后助手</h1>
+          <p>规则问答 · 交易查询 · 退款试算 · 纠纷分流</p>
+        </div>
+      </div>
+      <div class="topbar-right">
+        <span class="route-badge" id="routeBadge" data-route="">待命</span>
+        <button class="icon-btn" id="clearChat" title="清空当前会话">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M9 7V5h6v2M6 7l1 13h10l1-13" /></svg>
+        </button>
+      </div>
+    </header>
+
+    <section class="messages" id="messages">
+      <div class="welcome" id="welcome">
+        <div class="welcome-mark">闲</div>
+        <h2>你好，我是 ShopMate</h2>
+        <p>闲鱼售后问题都可以问我：能不能退、运费谁承担、退款到哪一步了、卖家不处理怎么办。</p>
+        <div class="suggests">
+          <button class="suggest" data-q="确认收货后多久还能申请售后？">确认收货后多久还能申请售后？</button>
+          <button class="suggest" data-q="帮我查一下订单 ORD202610180001 到哪了">帮我查订单 ORD202610180001 到哪了</button>
+          <button class="suggest" data-q="验货宝鉴定结果和描述不符，我能退吗？">验货宝结论不符能退吗？</button>
+          <button class="suggest" data-q="卖家一直不处理退款，我要申请平台介入">卖家不处理退款怎么办？</button>
+          <button class="suggest" data-q="我要去12315投诉你们">我要投诉平台</button>
+        </div>
+        <div class="welcome-note">对话会走真实 Agent：路由 → 检索 → 工具调用，全过程显示在消息下方。</div>
+      </div>
+    </section>
+
+    <footer class="composer">
+      <div class="order-chip hidden" id="orderChip"></div>
+      <div class="input-wrap">
+        <textarea id="input" rows="1" placeholder="描述你的售后问题，或直接输入订单号…"></textarea>
+        <button class="send-btn" id="send" title="发送">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l14-7-4 7 4 7-14-7z" /></svg>
+        </button>
+      </div>
+      <div class="composer-hint">Enter 发送 · Shift + Enter 换行 · 订单号格式 ORD + 12 位数字</div>
+    </footer>
+  </main>
+</div>
+<script src="/app.js"></script>
+</body>
+</html>

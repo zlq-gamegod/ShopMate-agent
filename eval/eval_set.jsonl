@@ -1,0 +1,45 @@
+{"id":"E001","category":"policy","question":"闲鱼上个人卖家卖的二手耳机，我能七天无理由退货吗？","expect_route":"policy","expect_tools":[],"key_points":["七天无理由","不适用"]}
+{"id":"E002","category":"policy","question":"卖家主页带「商」标识，卖的是全新商品，这种情况支持七天无理由吗？","expect_route":"policy","expect_tools":[],"key_points":["七天无理由","必须"]}
+{"id":"E003","category":"policy","question":"售后期的 15 日是工作日还是自然日？节假日算吗？","expect_route":"policy","expect_tools":[],"key_points":["自然日"]}
+{"id":"E004","category":"policy","question":"售后期从哪天开始算？下单那天还是发货那天？","expect_route":"policy","expect_tools":[],"key_points":["确认收货"]}
+{"id":"E005","category":"policy","question":"商品有质量问题要退货，退货运费谁承担？","expect_route":"policy","expect_tools":[],"key_points":["卖家"]}
+{"id":"E006","category":"policy","question":"是我自己不喜欢了想退，退货运费谁出？","expect_route":"policy","expect_tools":[],"key_points":["买家"]}
+{"id":"E007","category":"policy","question":"担保交易里卖家同意退款，钱多久能到账？","expect_route":"policy","expect_tools":[],"key_points":["即时"]}
+{"id":"E008","category":"policy","question":"货款已经打给卖家了，平台要划扣，但卖家账户余额不足怎么办？","expect_route":"policy","expect_tools":[],"key_points":["余额"]}
+{"id":"E009","category":"policy","question":"确认收货超过 20 天了，还能申请平台强制介入吗？","expect_route":"policy","expect_tools":[],"key_points":["协商"]}
+{"id":"E010","category":"policy","question":"买到的是假货，但已经超过 15 日了，还能处理吗？","expect_route":"policy","expect_tools":[],"key_points":["举报"]}
+{"id":"E011","category":"policy","question":"客服介入之后，举证期有多久？超时了会怎样？","expect_route":"policy","expect_tools":[],"key_points":["3"]}
+{"id":"E012","category":"policy","question":"什么情况下可以只申请仅退款、不用把货寄回去？","expect_route":"policy","expect_tools":[],"key_points":["未收到"]}
+{"id":"E013","category":"multi_hop","question":"ORD202610210007 签收几天了？还能申请售后吗？","expect_route":"policy","expect_tools":["get_after_sale_window"],"key_points":["4"]}
+{"id":"E014","category":"multi_hop","question":"ORD202610180010 这单还能退吗？过期没有？","expect_route":"policy","expect_tools":["get_after_sale_window"],"key_points":["25"]}
+{"id":"E015","category":"multi_hop","question":"ORD202610190015 签收多久了，还来得及申请售后吗？","expect_route":"policy","expect_tools":["get_after_sale_window"],"key_points":["30"]}
+{"id":"E016","category":"multi_hop","question":"ORD202610190003 还能退货吗？时间上还允许吗？","expect_route":"policy","expect_tools":["get_after_sale_window"],"key_points":["28"]}
+{"id":"E017","category":"multi_hop","question":"ORD202610200012 签收 8 天了，现在申请售后还来得及吗？","expect_route":"policy","expect_tools":["get_after_sale_window"],"key_points":["8"]}
+{"id":"E018","category":"multi_hop","question":"ORD202610190002 卖家一直不发货，我要等多久才能退款？","expect_route":"policy","expect_tools":["query_orders"],"key_points":["随时"]}
+{"id":"E019","category":"multi_hop","question":"ORD202610200005 退款被卖家拒绝了，接下来我该怎么办？","expect_route":"policy","expect_tools":["query_refund_status"],"key_points":["客服介入"]}
+{"id":"E020","category":"multi_hop","question":"ORD202610180001 已经发货了，我现在还能申请退款吗？","expect_route":"policy","expect_tools":["query_orders"],"key_points":["随时"]}
+{"id":"E021","category":"multi_hop","question":"ORD202610210009 我还没付款，能直接取消吗？","expect_route":"other","expect_tools":["query_orders"],"key_points":["付款"]}
+{"id":"E022","category":"multi_hop","question":"ORD202610200004 订单已经取消了，钱退回到我这里了吗？","expect_route":"other","expect_tools":["query_guarantee"],"key_points":["退回"]}
+{"id":"E023","category":"multi_hop","question":"ORD202610200005 小法庭投票到哪一步了，现在几比几？","expect_route":"policy","expect_tools":["get_dispute_status"],"key_points":["投票"]}
+{"id":"E024","category":"tool","question":"ORD202610180001 现在什么状态？","expect_route":"other","expect_tools":["query_orders"],"key_points":["已发货"]}
+{"id":"E025","category":"tool","question":"ORD202610210008 这单多少钱？","expect_route":"other","expect_tools":["query_orders"],"key_points":["1249"]}
+{"id":"E026","category":"tool","question":"ORD202610180001 快递到哪了？","expect_route":"other","expect_tools":["query_logistics"],"key_points":["顺丰"]}
+{"id":"E027","category":"tool","question":"ORD202610210007 是哪家快递，单号多少？","expect_route":"other","expect_tools":["query_logistics"],"key_points":["韵达"]}
+{"id":"E028","category":"tool","question":"ORD202610190002 有物流信息吗？","expect_route":"other","expect_tools":["query_logistics"],"key_points":["待发货"]}
+{"id":"E029","category":"tool","question":"ORD202610200005 我的退款申请现在什么状态？","expect_route":"other","expect_tools":["query_refund_status"],"key_points":["拒绝"]}
+{"id":"E030","category":"tool","question":"ORD202610200005 这笔钱现在在谁手上？","expect_route":"other","expect_tools":["query_guarantee"],"key_points":["冻结"]}
+{"id":"E031","category":"tool","question":"ORD202610180010 货款已经打给卖家了吗？","expect_route":"other","expect_tools":["query_guarantee"],"key_points":["已放款"]}
+{"id":"E032","category":"tool","question":"ORD202610210008 商品有问题要退，能退多少钱？","expect_route":"policy","expect_tools":["query_orders","calc_refund_amount"],"key_points":["1249"]}
+{"id":"E033","category":"boundary","question":"我要去 12315 投诉你们这个平台。","expect_route":"boundary","expect_tools":[],"key_points":["工单"]}
+{"id":"E034","category":"boundary","question":"你们就是骗子，全是套路，一步步骗钱。","expect_route":"boundary","expect_tools":[],"key_points":["工单"]}
+{"id":"E035","category":"boundary","question":"我要报警，这属于诈骗，我要立案。","expect_route":"boundary","expect_tools":[],"key_points":["工单"]}
+{"id":"E036","category":"boundary","question":"气死我了！！！你们到底有没有人管！！！","expect_route":"boundary","expect_tools":[],"key_points":["工单"]}
+{"id":"E037","category":"boundary","question":"我要把这件事曝光到网上，让大家都知道。","expect_route":"boundary","expect_tools":[],"key_points":["工单"]}
+{"id":"E038","category":"boundary","question":"卖家知道我的手机号，是不是你们泄露我的信息的？","expect_route":"boundary","expect_tools":[],"key_points":["工单"]}
+{"id":"E039","category":"boundary","question":"转人工。","expect_route":"boundary","expect_tools":[],"key_points":["工单"]}
+{"id":"E040","category":"boundary","question":"我要起诉你们，律师函已经准备好了。","expect_route":"boundary","expect_tools":[],"key_points":["工单"]}
+{"id":"E041","category":"chitchat","question":"你好","expect_route":"other","expect_tools":[],"key_points":[]}
+{"id":"E042","category":"chitchat","question":"你是谁？","expect_route":"other","expect_tools":[],"key_points":[]}
+{"id":"E043","category":"chitchat","question":"谢谢你啊","expect_route":"other","expect_tools":[],"key_points":[]}
+{"id":"E044","category":"chitchat","question":"你能做什么？","expect_route":"other","expect_tools":[],"key_points":[]}
+{"id":"E045","category":"chitchat","question":"在吗","expect_route":"other","expect_tools":[],"key_points":[]}

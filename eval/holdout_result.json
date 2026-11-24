@@ -1,0 +1,402 @@
+{
+  "summary": {
+    "samples": 20,
+    "pass_rate": 0.95,
+    "retrieval_rate": 0.7273,
+    "untraced_rate": 0.0,
+    "avg_turns": 1.45
+  },
+  "details": [
+    {
+      "id": "H01",
+      "category": "policy",
+      "passed": true,
+      "tool_ok": true,
+      "missing_tools": [],
+      "extra_tools": [],
+      "miss_points": [],
+      "route_ok": true,
+      "route": "policy",
+      "numbers": [
+        "10",
+        "5"
+      ],
+      "untraced_numbers": [],
+      "turns": 1,
+      "answer": "快递发货的订单，卖家发货后 10 个自然日系统自动确认收货。\n\n自动确认前可申请延长一次，最长 5 个自然日。具体倒计时以订单页显示为准。",
+      "pass_runs": 3,
+      "repeat": 3
+    },
+    {
+      "id": "H02",
+      "category": "policy",
+      "passed": true,
+      "tool_ok": true,
+      "missing_tools": [],
+      "extra_tools": [],
+      "miss_points": [],
+      "route_ok": true,
+      "route": "policy",
+      "numbers": [
+        "30"
+      ],
+      "untraced_numbers": [],
+      "turns": 1,
+      "answer": "退货运费由卖家承担，您凭运单据实报销，单笔上限30元。",
+      "pass_runs": 3,
+      "repeat": 3
+    },
+    {
+      "id": "H03",
+      "category": "policy",
+      "passed": false,
+      "tool_ok": true,
+      "missing_tools": [],
+      "extra_tools": [],
+      "miss_points": [
+        "10",
+        "30"
+      ],
+      "route_ok": false,
+      "route": "other",
+      "numbers": [],
+      "untraced_numbers": [],
+      "turns": 1,
+      "answer": "平台不按固定比例裁定协商部分退款，具体金额由买卖双方自行协商达成一致。如协商不成，可申请客服介入处理。\n\n需要我帮您查当前订单的实付金额或商品信息吗？请提供订单号。",
+      "pass_runs": 0,
+      "repeat": 3
+    },
+    {
+      "id": "H04",
+      "category": "policy",
+      "passed": true,
+      "tool_ok": true,
+      "missing_tools": [],
+      "extra_tools": [],
+      "miss_points": [],
+      "route_ok": true,
+      "route": "policy",
+      "numbers": [
+        "4",
+        "6"
+      ],
+      "untraced_numbers": [],
+      "turns": 1,
+      "answer": "客服介入后，平台裁定需 **4–6 个工作日**（举证完成后起算）。\n\n请先提供订单号，我可查当前是否已进入举证环节或裁定中。",
+      "pass_runs": 3,
+      "repeat": 3
+    },
+    {
+      "id": "H05",
+      "category": "policy",
+      "passed": true,
+      "tool_ok": true,
+      "missing_tools": [],
+      "extra_tools": [],
+      "miss_points": [],
+      "route_ok": true,
+      "route": "policy",
+      "numbers": [
+        "17",
+        "9"
+      ],
+      "untraced_numbers": [],
+      "turns": 1,
+      "answer": "17 位评审员投票，9 票即胜。",
+      "pass_runs": 3,
+      "repeat": 3
+    },
+    {
+      "id": "H06",
+      "category": "policy",
+      "passed": true,
+      "tool_ok": true,
+      "missing_tools": [],
+      "extra_tools": [],
+      "miss_points": [],
+      "route_ok": true,
+      "route": "policy",
+      "numbers": [
+        "72"
+      ],
+      "untraced_numbers": [],
+      "turns": 1,
+      "answer": "72 小时内提交凭证。",
+      "pass_runs": 3,
+      "repeat": 3
+    },
+    {
+      "id": "H07",
+      "category": "multi_hop",
+      "passed": true,
+      "tool_ok": true,
+      "missing_tools": [],
+      "extra_tools": [],
+      "miss_points": [],
+      "route_ok": false,
+      "route": "policy",
+      "numbers": [
+        "47"
+      ],
+      "untraced_numbers": [],
+      "turns": 2,
+      "answer": "退款申请已提交，当前状态：**审核中**，卖家需在 **47 小时内**处理。  \n如超时未处理，将自动进入客服介入流程。",
+      "pass_runs": 3,
+      "repeat": 3
+    },
+    {
+      "id": "H08",
+      "category": "multi_hop",
+      "passed": true,
+      "tool_ok": true,
+      "missing_tools": [],
+      "extra_tools": [],
+      "miss_points": [],
+      "route_ok": true,
+      "route": "other",
+      "numbers": [
+        "2026",
+        "11",
+        "12",
+        "18",
+        "00",
+        "00",
+        "4",
+        "6"
+      ],
+      "untraced_numbers": [],
+      "turns": 2,
+      "answer": "纠纷当前处于「客服介入审核中」阶段，举证截止时间为2026-11-12 18:00:00，下一步是等待平台裁定，预计4-6个工作日出结果。",
+      "pass_runs": 3,
+      "repeat": 3
+    },
+    {
+      "id": "H09",
+      "category": "multi_hop",
+      "passed": true,
+      "tool_ok": true,
+      "missing_tools": [],
+      "extra_tools": [
+        "query_orders"
+      ],
+      "miss_points": [],
+      "route_ok": true,
+      "route": "other",
+      "numbers": [
+        "78.0",
+        "66.0",
+        "12.0"
+      ],
+      "untraced_numbers": [],
+      "turns": 2,
+      "answer": "该订单实付78.0元，因「自己不喜欢」申请退款，预估可退66.0元（扣除回寄运费12.0元，需卖家同意）。  \n资金状态：担保中，可直接退回。  \n\n注：本结果为预估，实际以您发起退款并经审核后为准。",
+      "pass_runs": 3,
+      "repeat": 3
+    },
+    {
+      "id": "H10",
+      "category": "multi_hop",
+      "passed": true,
+      "tool_ok": true,
+      "missing_tools": [],
+      "extra_tools": [],
+      "miss_points": [],
+      "route_ok": true,
+      "route": "other",
+      "numbers": [
+        "649.0"
+      ],
+      "untraced_numbers": [],
+      "turns": 2,
+      "answer": "钱还在平台手上，状态是「担保中」，金额649.0元。  \n货款由平台代管，买家确认收货后放款给卖家。",
+      "pass_runs": 3,
+      "repeat": 3
+    },
+    {
+      "id": "H11",
+      "category": "multi_hop",
+      "passed": true,
+      "tool_ok": true,
+      "missing_tools": [],
+      "extra_tools": [
+        "query_orders",
+        "get_after_sale_window",
+        "query_guarantee"
+      ],
+      "miss_points": [],
+      "route_ok": false,
+      "route": "policy",
+      "numbers": [
+        "18",
+        "3",
+        "268.0"
+      ],
+      "untraced_numbers": [],
+      "turns": 2,
+      "answer": "签收 18 天，已超出售后期 3 天。\n\n不支持平台强制退款，但您仍可：\n- 与卖家协商部分或全额退款；\n- 若卖家拒绝，可申请客服介入（需提供开箱视频、商品与描述不符证据）；\n- 如属售假/发错货等严重问题，可举报违规。\n\n资金当前处于「冻结中」，担保金额 268.0 元。",
+      "pass_runs": 2,
+      "repeat": 3
+    },
+    {
+      "id": "H12",
+      "category": "tool",
+      "passed": true,
+      "tool_ok": true,
+      "missing_tools": [],
+      "extra_tools": [],
+      "miss_points": [],
+      "route_ok": true,
+      "route": "other",
+      "numbers": [],
+      "untraced_numbers": [],
+      "turns": 2,
+      "answer": "快递单号：SF1357924680000，承运商：顺丰速运。",
+      "pass_runs": 3,
+      "repeat": 3
+    },
+    {
+      "id": "H13",
+      "category": "tool",
+      "passed": true,
+      "tool_ok": true,
+      "missing_tools": [],
+      "extra_tools": [],
+      "miss_points": [],
+      "route_ok": true,
+      "route": "other",
+      "numbers": [],
+      "untraced_numbers": [],
+      "turns": 2,
+      "answer": "圆通速递。",
+      "pass_runs": 3,
+      "repeat": 3
+    },
+    {
+      "id": "H14",
+      "category": "tool",
+      "passed": true,
+      "tool_ok": true,
+      "missing_tools": [],
+      "extra_tools": [],
+      "miss_points": [],
+      "route_ok": true,
+      "route": "other",
+      "numbers": [],
+      "untraced_numbers": [],
+      "turns": 2,
+      "answer": "ORD202610190011 当前状态：部分发货。  \n货未全部发出。",
+      "pass_runs": 3,
+      "repeat": 3
+    },
+    {
+      "id": "H15",
+      "category": "tool",
+      "passed": true,
+      "tool_ok": true,
+      "missing_tools": [],
+      "extra_tools": [],
+      "miss_points": [],
+      "route_ok": true,
+      "route": "other",
+      "numbers": [
+        "35.9"
+      ],
+      "untraced_numbers": [],
+      "turns": 2,
+      "answer": "该订单状态为「待付款」，实付金额 35.9 元，尚未付款。",
+      "pass_runs": 3,
+      "repeat": 3
+    },
+    {
+      "id": "H16",
+      "category": "boundary",
+      "passed": true,
+      "tool_ok": true,
+      "missing_tools": [],
+      "extra_tools": [],
+      "miss_points": [],
+      "route_ok": true,
+      "route": "boundary",
+      "numbers": [
+        "5"
+      ],
+      "untraced_numbers": [],
+      "turns": 1,
+      "answer": "已为您转接人工客服，工单号 HR20261030001，预计 5 分钟内接入。触发原因：boundary",
+      "pass_runs": 3,
+      "repeat": 3
+    },
+    {
+      "id": "H17",
+      "category": "boundary",
+      "passed": true,
+      "tool_ok": true,
+      "missing_tools": [],
+      "extra_tools": [],
+      "miss_points": [],
+      "route_ok": true,
+      "route": "boundary",
+      "numbers": [
+        "5"
+      ],
+      "untraced_numbers": [],
+      "turns": 1,
+      "answer": "已为您转接人工客服，工单号 HR20261030001，预计 5 分钟内接入。触发原因：boundary",
+      "pass_runs": 3,
+      "repeat": 3
+    },
+    {
+      "id": "H18",
+      "category": "boundary",
+      "passed": true,
+      "tool_ok": true,
+      "missing_tools": [],
+      "extra_tools": [],
+      "miss_points": [],
+      "route_ok": true,
+      "route": "boundary",
+      "numbers": [
+        "5"
+      ],
+      "untraced_numbers": [],
+      "turns": 1,
+      "answer": "已为您转接人工客服，工单号 HR20261030001，预计 5 分钟内接入。触发原因：boundary",
+      "pass_runs": 3,
+      "repeat": 3
+    },
+    {
+      "id": "H19",
+      "category": "chitchat",
+      "passed": true,
+      "tool_ok": true,
+      "missing_tools": [],
+      "extra_tools": [],
+      "miss_points": [],
+      "route_ok": true,
+      "route": "other",
+      "numbers": [],
+      "untraced_numbers": [],
+      "turns": 1,
+      "answer": "早上好",
+      "pass_runs": 3,
+      "repeat": 3
+    },
+    {
+      "id": "H20",
+      "category": "chitchat",
+      "passed": true,
+      "tool_ok": true,
+      "missing_tools": [],
+      "extra_tools": [],
+      "miss_points": [],
+      "route_ok": true,
+      "route": "other",
+      "numbers": [],
+      "untraced_numbers": [],
+      "turns": 1,
+      "answer": "不客气！有其他问题随时找我～",
+      "pass_runs": 3,
+      "repeat": 3
+    }
+  ]
+}

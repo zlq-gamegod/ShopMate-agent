@@ -1,0 +1,16 @@
+{
+  "ORD202610200005": {
+    "stage": "小法庭投票中",
+    "evidence_deadline": "2026-11-11 23:59:59",
+    "votes_buyer": 3,
+    "votes_seller": 1,
+    "next_step": "等待评审团投票结束，结果在截止后 2 小时内公布"
+  },
+  "ORD202610190003": {
+    "stage": "客服介入审核中",
+    "evidence_deadline": "2026-11-12 18:00:00",
+    "votes_buyer": null,
+    "votes_seller": null,
+    "next_step": "等待平台裁定，预计 4-6 个工作日"
+  }
+}

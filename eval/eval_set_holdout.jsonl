@@ -1,0 +1,20 @@
+{"id":"H01","category":"policy","question":"快递发货的订单，卖家发货后多久系统会自动确认收货？这个时间能延长吗？","expect_route":"policy","expect_tools":[],"key_points":["10","5"]}
+{"id":"H02","category":"policy","question":"是商品本身的问题，退货运费我先垫付了，最多能给我报多少钱？","expect_route":"policy","expect_tools":[],"key_points":["30"]}
+{"id":"H03","category":"policy","question":"东西有点小瑕疵但我想留着用，跟卖家协商部分退款的话，平台一般按什么比例裁定？","expect_route":"policy","expect_tools":[],"key_points":["10","30"]}
+{"id":"H04","category":"policy","question":"我已经申请客服介入了，一般要等多久才有裁定结果？","expect_route":"policy","expect_tools":[],"key_points":["4"]}
+{"id":"H05","category":"policy","question":"闲鱼小法庭一共几个评审员投票？几票算赢？","expect_route":"policy","expect_tools":[],"key_points":["17","9"]}
+{"id":"H06","category":"policy","question":"小法庭开庭前要在多长时间内提交凭证？","expect_route":"policy","expect_tools":[],"key_points":["72"]}
+{"id":"H07","category":"multi_hop","question":"ORD202610210007 我的退款申请审到哪一步了，还要等多久？","expect_route":"other","expect_tools":["query_refund_status"],"key_points":["47"]}
+{"id":"H08","category":"multi_hop","question":"ORD202610190003 我和卖家的纠纷现在处理到哪个阶段了？","expect_route":"other","expect_tools":["get_dispute_status"],"key_points":["客服介入"]}
+{"id":"H09","category":"multi_hop","question":"ORD202610210007 我是自己不喜欢了才退的，这单最后能退我多少钱？","expect_route":"other","expect_tools":["calc_refund_amount"],"key_points":["66"]}
+{"id":"H10","category":"multi_hop","question":"ORD202610210013 这单已经发货了，钱现在还在平台手上还是已经给卖家了？","expect_route":"other","expect_tools":["query_guarantee"],"key_points":["担保"]}
+{"id":"H11","category":"multi_hop","question":"ORD202610200005 商品有问题我申请退款，最多能退多少钱？","expect_route":"other","expect_tools":["calc_refund_amount"],"key_points":["268"]}
+{"id":"H12","category":"tool","question":"ORD202610210013 的快递单号是多少？","expect_route":"other","expect_tools":["query_logistics"],"key_points":["SF1357924680000"]}
+{"id":"H13","category":"tool","question":"ORD202610210006 用什么快递发的？","expect_route":"other","expect_tools":["query_logistics"],"key_points":["圆通"]}
+{"id":"H14","category":"tool","question":"ORD202610190011 现在是什么状态，货都发出来了吗？","expect_route":"other","expect_tools":["query_orders"],"key_points":["部分发货"]}
+{"id":"H15","category":"tool","question":"ORD202610210009 我付款了吗？","expect_route":"other","expect_tools":["query_orders"],"key_points":["待付款"]}
+{"id":"H16","category":"boundary","question":"我要向消协投诉你们，必须给我一个说法。","expect_route":"boundary","expect_tools":[],"key_points":["工单"]}
+{"id":"H17","category":"boundary","question":"我要把这件事曝光，让全网都知道你们是怎么处理的。","expect_route":"boundary","expect_tools":[],"key_points":["工单"]}
+{"id":"H18","category":"boundary","question":"你们这个垃圾平台，根本没人管！","expect_route":"boundary","expect_tools":[],"key_points":["工单"]}
+{"id":"H19","category":"chitchat","question":"早上好","expect_route":"other","expect_tools":[],"key_points":[]}
+{"id":"H20","category":"chitchat","question":"好的，我知道了，辛苦你","expect_route":"other","expect_tools":[],"key_points":[]}

@@ -1,0 +1,790 @@
+{
+  "summary": {
+    "samples": 45,
+    "pass_rate": 0.8667,
+    "retrieval_rate": 1.0,
+    "untraced_rate": 0.0,
+    "avg_turns": 1.44
+  },
+  "details": [
+    {
+      "id": "E001",
+      "category": "policy",
+      "passed": true,
+      "tool_ok": true,
+      "missing_tools": [],
+      "extra_tools": [],
+      "miss_points": [],
+      "route_ok": true,
+      "route": "policy",
+      "numbers": [],
+      "untraced_numbers": [],
+      "turns": 1,
+      "answer": "不能。  \n个人卖家转让闲置商品不属于经营行为，不适用《消费者权益保护法》第二十五条的七天无理由退货规定。  \n\n例外：若该卖家有「商」标识且销售全新商品，则必须支持七天无理由退货。判断依据是商品页是否有「商」标，不是昵称或简介。"
+    },
+    {
+      "id": "E002",
+      "category": "policy",
+      "passed": true,
+      "tool_ok": true,
+      "missing_tools": [],
+      "extra_tools": [],
+      "miss_points": [],
+      "route_ok": true,
+      "route": "policy",
+      "numbers": [],
+      "untraced_numbers": [],
+      "turns": 1,
+      "answer": "支持。卖家带有「商」标识且销售全新商品时，必须支持七天无理由退货。"
+    },
+    {
+      "id": "E003",
+      "category": "policy",
+      "passed": true,
+      "tool_ok": true,
+      "missing_tools": [],
+      "extra_tools": [],
+      "miss_points": [],
+      "route_ok": true,
+      "route": "policy",
+      "numbers": [
+        "15"
+      ],
+      "untraced_numbers": [],
+      "turns": 1,
+      "answer": "15 日是自然日，节假日不跳过。"
+    },
+    {
+      "id": "E004",
+      "category": "policy",
+      "passed": true,
+      "tool_ok": true,
+      "missing_tools": [],
+      "extra_tools": [],
+      "miss_points": [],
+      "route_ok": true,
+      "route": "policy",
+      "numbers": [
+        "15",
+        "003"
+      ],
+      "untraced_numbers": [],
+      "turns": 1,
+      "answer": "售后期从确认收货当日开始算，不是下单或发货那天。\n\n依据：售后期起算点为「确认收货当日」，15个自然日。  \n（来源：XY-TIME-003 文档）"
+    },
+    {
+      "id": "E005",
+      "category": "policy",
+      "passed": true,
+      "tool_ok": true,
+      "missing_tools": [],
+      "extra_tools": [],
+      "miss_points": [],
+      "route_ok": true,
+      "route": "policy",
+      "numbers": [],
+      "untraced_numbers": [],
+      "turns": 1,
+      "answer": "商品有质量问题，退货运费由卖家承担。"
+    },
+    {
+      "id": "E006",
+      "category": "policy",
+      "passed": true,
+      "tool_ok": true,
+      "missing_tools": [],
+      "extra_tools": [],
+      "miss_points": [],
+      "route_ok": true,
+      "route": "policy",
+      "numbers": [],
+      "untraced_numbers": [],
+      "turns": 1,
+      "answer": "主观原因退货，退货运费由买家承担。"
+    },
+    {
+      "id": "E007",
+      "category": "policy",
+      "passed": true,
+      "tool_ok": true,
+      "missing_tools": [],
+      "extra_tools": [],
+      "miss_points": [],
+      "route_ok": true,
+      "route": "policy",
+      "numbers": [],
+      "untraced_numbers": [],
+      "turns": 1,
+      "answer": "担保中、卖家同意退款，钱即时退回原支付渠道。"
+    },
+    {
+      "id": "E008",
+      "category": "policy",
+      "passed": true,
+      "tool_ok": true,
+      "missing_tools": [],
+      "extra_tools": [],
+      "miss_points": [],
+      "route_ok": true,
+      "route": "policy",
+      "numbers": [],
+      "untraced_numbers": [],
+      "turns": 1,
+      "answer": "卖家账户余额不足时，平台需等待卖家主动充值后才能划扣。"
+    },
+    {
+      "id": "E009",
+      "category": "policy",
+      "passed": false,
+      "tool_ok": true,
+      "missing_tools": [],
+      "extra_tools": [],
+      "miss_points": [
+        "协商"
+      ],
+      "route_ok": true,
+      "route": "policy",
+      "numbers": [
+        "15"
+      ],
+      "untraced_numbers": [],
+      "turns": 1,
+      "answer": "不能。确认收货超过 15 个自然日，售后入口关闭，平台不再受理强制介入。"
+    },
+    {
+      "id": "E010",
+      "category": "policy",
+      "passed": true,
+      "tool_ok": true,
+      "missing_tools": [],
+      "extra_tools": [],
+      "miss_points": [],
+      "route_ok": true,
+      "route": "policy",
+      "numbers": [
+        "15"
+      ],
+      "untraced_numbers": [],
+      "turns": 1,
+      "answer": "可以处理。售假行为不受 15 日售后期限制，您可通过举报入口提交证据（如第三方鉴定报告、正品对比图、官方验真结果等），平台将依法依规核查处置。"
+    },
+    {
+      "id": "E011",
+      "category": "policy",
+      "passed": true,
+      "tool_ok": true,
+      "missing_tools": [],
+      "extra_tools": [],
+      "miss_points": [],
+      "route_ok": true,
+      "route": "policy",
+      "numbers": [
+        "3"
+      ],
+      "untraced_numbers": [],
+      "turns": 1,
+      "answer": "客服介入后的举证期为**通知后3个自然日**；超时未上传材料的，系统直接判定**举证不足**，维持对方主张。"
+    },
+    {
+      "id": "E012",
+      "category": "policy",
+      "passed": true,
+      "tool_ok": true,
+      "missing_tools": [],
+      "extra_tools": [],
+      "miss_points": [],
+      "route_ok": true,
+      "route": "policy",
+      "numbers": [
+        "5"
+      ],
+      "untraced_numbers": [],
+      "turns": 1,
+      "answer": "根据平台规则，以下情形可申请**仅退款**（不退货）：\n\n- 未发货：卖家超时未发货，买家可随时申请全额退款；  \n- 虚假发货：运单号无效或查无物流信息；  \n- 空包、少件、掉包：签收前开箱发现包裹内无货、货不对板或数量不符，且已录制开箱视频；  \n- 物流显示签收但实际未收到：提供快递公司出具的「非本人签收」证明；  \n- 物流长时间无更新（超5天无轨迹），确认丢件。\n\n其他情形（如商品与描述不符、质量问题、破损等）需退货退款，运费由卖家承担。"
+    },
+    {
+      "id": "E013",
+      "category": "multi_hop",
+      "passed": true,
+      "tool_ok": true,
+      "missing_tools": [],
+      "extra_tools": [
+        "query_orders"
+      ],
+      "miss_points": [],
+      "route_ok": true,
+      "route": "policy",
+      "numbers": [
+        "4",
+        "11"
+      ],
+      "untraced_numbers": [],
+      "turns": 2,
+      "answer": "签收 4 天，还能申请售后，剩余 11 天。"
+    },
+    {
+      "id": "E014",
+      "category": "multi_hop",
+      "passed": false,
+      "tool_ok": true,
+      "missing_tools": [],
+      "extra_tools": [],
+      "miss_points": [
+        "25"
+      ],
+      "route_ok": true,
+      "route": "policy",
+      "numbers": [
+        "10"
+      ],
+      "untraced_numbers": [],
+      "turns": 2,
+      "answer": "已超期10天，售后入口关闭，无法申请退款。"
+    },
+    {
+      "id": "E015",
+      "category": "multi_hop",
+      "passed": false,
+      "tool_ok": true,
+      "missing_tools": [],
+      "extra_tools": [],
+      "miss_points": [
+        "30"
+      ],
+      "route_ok": true,
+      "route": "policy",
+      "numbers": [
+        "15"
+      ],
+      "untraced_numbers": [],
+      "turns": 2,
+      "answer": "已超售后期15天，无法申请售后。"
+    },
+    {
+      "id": "E016",
+      "category": "multi_hop",
+      "passed": false,
+      "tool_ok": true,
+      "missing_tools": [],
+      "extra_tools": [],
+      "miss_points": [
+        "28"
+      ],
+      "route_ok": true,
+      "route": "policy",
+      "numbers": [
+        "13"
+      ],
+      "untraced_numbers": [],
+      "turns": 2,
+      "answer": "已超售后期13天，无法申请退货。"
+    },
+    {
+      "id": "E017",
+      "category": "multi_hop",
+      "passed": false,
+      "tool_ok": true,
+      "missing_tools": [],
+      "extra_tools": [],
+      "miss_points": [
+        "8"
+      ],
+      "route_ok": true,
+      "route": "policy",
+      "numbers": [
+        "7"
+      ],
+      "untraced_numbers": [],
+      "turns": 2,
+      "answer": "来得及，还剩 7 天。"
+    },
+    {
+      "id": "E018",
+      "category": "multi_hop",
+      "passed": true,
+      "tool_ok": true,
+      "missing_tools": [],
+      "extra_tools": [],
+      "miss_points": [],
+      "route_ok": true,
+      "route": "policy",
+      "numbers": [],
+      "untraced_numbers": [],
+      "turns": 2,
+      "answer": "不用等。未发货订单随时可申请退款，属卖家责任，全额退。"
+    },
+    {
+      "id": "E019",
+      "category": "multi_hop",
+      "passed": true,
+      "tool_ok": true,
+      "missing_tools": [],
+      "extra_tools": [],
+      "miss_points": [],
+      "route_ok": true,
+      "route": "policy",
+      "numbers": [
+        "2026",
+        "11",
+        "12",
+        "23",
+        "59",
+        "59"
+      ],
+      "untraced_numbers": [],
+      "turns": 2,
+      "answer": "卖家已拒绝退款，您可在订单页点击「申请客服介入」，平台将根据证据裁定。  \n当前介入截止时间为：2026-11-12 23:59:59。"
+    },
+    {
+      "id": "E020",
+      "category": "multi_hop",
+      "passed": true,
+      "tool_ok": true,
+      "missing_tools": [],
+      "extra_tools": [],
+      "miss_points": [],
+      "route_ok": true,
+      "route": "policy",
+      "numbers": [],
+      "untraced_numbers": [],
+      "turns": 2,
+      "answer": "能申请退款。订单状态为「已发货」，尚未确认收货，您可随时在订单页点击「申请退款」。"
+    },
+    {
+      "id": "E021",
+      "category": "multi_hop",
+      "passed": true,
+      "tool_ok": true,
+      "missing_tools": [],
+      "extra_tools": [],
+      "miss_points": [],
+      "route_ok": true,
+      "route": "other",
+      "numbers": [],
+      "untraced_numbers": [],
+      "turns": 2,
+      "answer": "可以取消。订单状态为“待付款”，您可直接在订单页面点击“取消订单”。"
+    },
+    {
+      "id": "E022",
+      "category": "multi_hop",
+      "passed": true,
+      "tool_ok": true,
+      "missing_tools": [],
+      "extra_tools": [],
+      "miss_points": [],
+      "route_ok": true,
+      "route": "other",
+      "numbers": [
+        "89.0"
+      ],
+      "untraced_numbers": [],
+      "turns": 2,
+      "answer": "钱已退回您账户，金额89.0元。"
+    },
+    {
+      "id": "E023",
+      "category": "multi_hop",
+      "passed": true,
+      "tool_ok": true,
+      "missing_tools": [],
+      "extra_tools": [],
+      "miss_points": [],
+      "route_ok": true,
+      "route": "policy",
+      "numbers": [
+        "3",
+        "1",
+        "2026",
+        "11",
+        "11",
+        "23",
+        "59",
+        "59",
+        "2"
+      ],
+      "untraced_numbers": [],
+      "turns": 2,
+      "answer": "小法庭投票中，当前买家3票、卖家1票。举证截止时间为2026-11-11 23:59:59，结果将在截止后2小时内公布。"
+    },
+    {
+      "id": "E024",
+      "category": "tool",
+      "passed": true,
+      "tool_ok": true,
+      "missing_tools": [],
+      "extra_tools": [],
+      "miss_points": [],
+      "route_ok": true,
+      "route": "other",
+      "numbers": [
+        "329.0",
+        "1",
+        "1",
+        "88"
+      ],
+      "untraced_numbers": [],
+      "turns": 2,
+      "answer": "ORD202610180001 当前状态：已发货，实付金额 329.0 元，商品为无线蓝牙耳机 Pro（1件）和耳机收纳包（1件），收货地址为广东省深圳市南山区科技园南路 88 号。"
+    },
+    {
+      "id": "E025",
+      "category": "tool",
+      "passed": true,
+      "tool_ok": true,
+      "missing_tools": [],
+      "extra_tools": [],
+      "miss_points": [],
+      "route_ok": true,
+      "route": "other",
+      "numbers": [
+        "1249.0"
+      ],
+      "untraced_numbers": [],
+      "turns": 2,
+      "answer": "实付金额：1249.0 元。"
+    },
+    {
+      "id": "E026",
+      "category": "tool",
+      "passed": true,
+      "tool_ok": true,
+      "missing_tools": [],
+      "extra_tools": [],
+      "miss_points": [],
+      "route_ok": true,
+      "route": "other",
+      "numbers": [
+        "2026",
+        "10",
+        "19",
+        "14",
+        "32",
+        "00"
+      ],
+      "untraced_numbers": [],
+      "turns": 2,
+      "answer": "快递已由顺丰速运发出，单号 SF1389204771234，最新更新时间：2026-10-19 14:32:00。当前订单状态为「已发货」。"
+    },
+    {
+      "id": "E027",
+      "category": "tool",
+      "passed": true,
+      "tool_ok": true,
+      "missing_tools": [],
+      "extra_tools": [],
+      "miss_points": [],
+      "route_ok": true,
+      "route": "other",
+      "numbers": [],
+      "untraced_numbers": [],
+      "turns": 2,
+      "answer": "韵达快递，单号：YD9182736450000。"
+    },
+    {
+      "id": "E028",
+      "category": "tool",
+      "passed": true,
+      "tool_ok": true,
+      "missing_tools": [],
+      "extra_tools": [],
+      "miss_points": [],
+      "route_ok": true,
+      "route": "other",
+      "numbers": [],
+      "untraced_numbers": [],
+      "turns": 2,
+      "answer": "该订单暂无物流信息，目前状态为“待发货”。"
+    },
+    {
+      "id": "E029",
+      "category": "tool",
+      "passed": true,
+      "tool_ok": true,
+      "missing_tools": [],
+      "extra_tools": [],
+      "miss_points": [],
+      "route_ok": true,
+      "route": "other",
+      "numbers": [
+        "2026",
+        "11",
+        "12",
+        "23",
+        "59",
+        "59"
+      ],
+      "untraced_numbers": [],
+      "turns": 2,
+      "answer": "您的退款申请已被卖家拒绝，当前可申请客服介入，截止时间为2026-11-12 23:59:59。"
+    },
+    {
+      "id": "E030",
+      "category": "tool",
+      "passed": true,
+      "tool_ok": true,
+      "missing_tools": [],
+      "extra_tools": [],
+      "miss_points": [],
+      "route_ok": true,
+      "route": "other",
+      "numbers": [
+        "268.0"
+      ],
+      "untraced_numbers": [],
+      "turns": 2,
+      "answer": "钱在平台担保账户，冻结中，金额268.0元。"
+    },
+    {
+      "id": "E031",
+      "category": "tool",
+      "passed": true,
+      "tool_ok": true,
+      "missing_tools": [],
+      "extra_tools": [],
+      "miss_points": [],
+      "route_ok": true,
+      "route": "other",
+      "numbers": [
+        "899"
+      ],
+      "untraced_numbers": [],
+      "turns": 2,
+      "answer": "货款已放款给卖家，金额899元。"
+    },
+    {
+      "id": "E032",
+      "category": "tool",
+      "passed": false,
+      "tool_ok": false,
+      "missing_tools": [
+        "calc_refund_amount"
+      ],
+      "extra_tools": [
+        "get_after_sale_window",
+        "query_refund_status",
+        "query_guarantee"
+      ],
+      "miss_points": [],
+      "route_ok": true,
+      "route": "policy",
+      "numbers": [
+        "1249"
+      ],
+      "untraced_numbers": [],
+      "turns": 2,
+      "answer": "订单尚未签收，也未申请售后。\n\n请先在订单页点击「申请售后」，选择问题类型（如发错货、破损等），平台将根据实际情形判定是否支持退货及运费承担方。\n\n当前货款1249元仍在平台担保中，未打款给卖家。"
+    },
+    {
+      "id": "E033",
+      "category": "boundary",
+      "passed": true,
+      "tool_ok": true,
+      "missing_tools": [],
+      "extra_tools": [],
+      "miss_points": [],
+      "route_ok": true,
+      "route": "boundary",
+      "numbers": [
+        "5"
+      ],
+      "untraced_numbers": [],
+      "turns": 1,
+      "answer": "已为您转接人工客服，工单号 HR20261030001，预计 5 分钟内接入。触发原因：boundary"
+    },
+    {
+      "id": "E034",
+      "category": "boundary",
+      "passed": true,
+      "tool_ok": true,
+      "missing_tools": [],
+      "extra_tools": [],
+      "miss_points": [],
+      "route_ok": true,
+      "route": "boundary",
+      "numbers": [
+        "5"
+      ],
+      "untraced_numbers": [],
+      "turns": 1,
+      "answer": "已为您转接人工客服，工单号 HR20261030001，预计 5 分钟内接入。触发原因：boundary"
+    },
+    {
+      "id": "E035",
+      "category": "boundary",
+      "passed": true,
+      "tool_ok": true,
+      "missing_tools": [],
+      "extra_tools": [],
+      "miss_points": [],
+      "route_ok": true,
+      "route": "boundary",
+      "numbers": [
+        "5"
+      ],
+      "untraced_numbers": [],
+      "turns": 1,
+      "answer": "已为您转接人工客服，工单号 HR20261030001，预计 5 分钟内接入。触发原因：boundary"
+    },
+    {
+      "id": "E036",
+      "category": "boundary",
+      "passed": true,
+      "tool_ok": true,
+      "missing_tools": [],
+      "extra_tools": [],
+      "miss_points": [],
+      "route_ok": true,
+      "route": "boundary",
+      "numbers": [
+        "5"
+      ],
+      "untraced_numbers": [],
+      "turns": 1,
+      "answer": "已为您转接人工客服，工单号 HR20261030001，预计 5 分钟内接入。触发原因：boundary"
+    },
+    {
+      "id": "E037",
+      "category": "boundary",
+      "passed": true,
+      "tool_ok": true,
+      "missing_tools": [],
+      "extra_tools": [],
+      "miss_points": [],
+      "route_ok": true,
+      "route": "boundary",
+      "numbers": [
+        "5"
+      ],
+      "untraced_numbers": [],
+      "turns": 1,
+      "answer": "已为您转接人工客服，工单号 HR20261030001，预计 5 分钟内接入。触发原因：boundary"
+    },
+    {
+      "id": "E038",
+      "category": "boundary",
+      "passed": true,
+      "tool_ok": true,
+      "missing_tools": [],
+      "extra_tools": [],
+      "miss_points": [],
+      "route_ok": true,
+      "route": "boundary",
+      "numbers": [
+        "5"
+      ],
+      "untraced_numbers": [],
+      "turns": 1,
+      "answer": "已为您转接人工客服，工单号 HR20261030001，预计 5 分钟内接入。触发原因：boundary"
+    },
+    {
+      "id": "E039",
+      "category": "boundary",
+      "passed": true,
+      "tool_ok": true,
+      "missing_tools": [],
+      "extra_tools": [],
+      "miss_points": [],
+      "route_ok": true,
+      "route": "boundary",
+      "numbers": [
+        "5"
+      ],
+      "untraced_numbers": [],
+      "turns": 1,
+      "answer": "已为您转接人工客服，工单号 HR20261030001，预计 5 分钟内接入。触发原因：boundary"
+    },
+    {
+      "id": "E040",
+      "category": "boundary",
+      "passed": true,
+      "tool_ok": true,
+      "missing_tools": [],
+      "extra_tools": [],
+      "miss_points": [],
+      "route_ok": true,
+      "route": "boundary",
+      "numbers": [
+        "5"
+      ],
+      "untraced_numbers": [],
+      "turns": 1,
+      "answer": "已为您转接人工客服，工单号 HR20261030001，预计 5 分钟内接入。触发原因：boundary"
+    },
+    {
+      "id": "E041",
+      "category": "chitchat",
+      "passed": true,
+      "tool_ok": true,
+      "missing_tools": [],
+      "extra_tools": [],
+      "miss_points": [],
+      "route_ok": true,
+      "route": "other",
+      "numbers": [],
+      "untraced_numbers": [],
+      "turns": 1,
+      "answer": "你好，请问有什么可以帮您？"
+    },
+    {
+      "id": "E042",
+      "category": "chitchat",
+      "passed": true,
+      "tool_ok": true,
+      "missing_tools": [],
+      "extra_tools": [],
+      "miss_points": [],
+      "route_ok": true,
+      "route": "other",
+      "numbers": [],
+      "untraced_numbers": [],
+      "turns": 1,
+      "answer": "闲鱼售后客服。"
+    },
+    {
+      "id": "E043",
+      "category": "chitchat",
+      "passed": true,
+      "tool_ok": true,
+      "missing_tools": [],
+      "extra_tools": [],
+      "miss_points": [],
+      "route_ok": true,
+      "route": "other",
+      "numbers": [],
+      "untraced_numbers": [],
+      "turns": 1,
+      "answer": "不客气！有其他问题随时问我～"
+    },
+    {
+      "id": "E044",
+      "category": "chitchat",
+      "passed": true,
+      "tool_ok": true,
+      "missing_tools": [],
+      "extra_tools": [],
+      "miss_points": [],
+      "route_ok": true,
+      "route": "other",
+      "numbers": [],
+      "untraced_numbers": [],
+      "turns": 1,
+      "answer": "我是闲鱼售后客服，能帮你处理：\n- 查询订单状态、物流、售后时效  \n- 计算退款金额、查退款进度  \n- 查担保资金去向（钱在买家还是卖家手上）  \n- 查纠纷/小法庭进展  \n\n请直接告诉我你的问题，比如订单号、想退什么、遇到什么情况。"
+    },
+    {
+      "id": "E045",
+      "category": "chitchat",
+      "passed": true,
+      "tool_ok": true,
+      "missing_tools": [],
+      "extra_tools": [],
+      "miss_points": [],
+      "route_ok": true,
+      "route": "other",
+      "numbers": [],
+      "untraced_numbers": [],
+      "turns": 1,
+      "answer": "在的"
+    }
+  ]
+}
